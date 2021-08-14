@@ -132,3 +132,8 @@ in views touch searchView.js
 ## 293. Implementing Pagination - Part 2
 
             in views touch paginationView.js
+
+            ?????stuck at 27:34
+            **** mispelled handler in props of addHandlerClick in paginationViews
+            ???? now its logging 'Pag Controller' instead of the number
+            **** wrong console.log in the controller
