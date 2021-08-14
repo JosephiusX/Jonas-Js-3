@@ -2,6 +2,7 @@ import icons from 'url:../../img/icons.svg'; // Parcel 2
 
 export default class View {
   _data;
+
   render(data) {
     // if there is no data or if data array is empty  ,  exit function and render error
     if (!data || (Array.isArray(data) && data.length === 0))

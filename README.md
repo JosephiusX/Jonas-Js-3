@@ -128,3 +128,7 @@ in views touch searchView.js
 ## 292. Implementing Pagination - Part 1
 
             the easy part
+
+## 293. Implementing Pagination - Part 2
+
+            in views touch paginationView.js
