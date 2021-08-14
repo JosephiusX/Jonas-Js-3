@@ -4,6 +4,14 @@ import icons from 'url:../../img/icons.svg'; // Parcel 2
 class PaginationView extends View {
   _parentElement = document.querySelector('.pagination');
 
+  addHandlerClick(hanler) {
+    this._parentElement.addEventListener('click', function (e) {
+      const btn = e.target.closest('.btn--inline'); //closest  like querySelector but looks up to parents in the dom tree not down to children
+      console.log(btn);
+      handler();
+    });
+  }
+
   _generateMarkup() {
     const curPage = this._data.page;
     const numPages = Math.ceil(
@@ -29,7 +37,7 @@ class PaginationView extends View {
             <svg class="search__icon">
                 <use href="${icons}#icon-arrow-left"></use>
             </svg>
-            <span>Page ${curPage + 1}</span>
+            <span>Page ${curPage - 1}</span>
         </button>
     `;
     }
