@@ -147,4 +147,4 @@ in views touch searchView.js
 
             he reccomends analizing the code at this point before moving on
 
-
+## 294. Project Planning II
