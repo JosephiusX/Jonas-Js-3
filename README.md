@@ -137,3 +137,8 @@ in views touch searchView.js
             **** mispelled handler in props of addHandlerClick in paginationViews
             ???? now its logging 'Pag Controller' instead of the number
             **** wrong console.log in the controller
+
+            ******     this._clear;
+                    should have been this:
+                            this._clear();
+                                in View.js
