@@ -29,6 +29,8 @@ project api documentation
         try with a different id
             5ed6604691c37cdc054bd0c0
 
+adding parcel files to .getignore along with dist files will prevent filesize github issues later.
+
 ## 283. Rendering the Recipe
 
 ?????? ERROR: ET http://forkify-api.herokuapp.com/images/PizzaMonkeyBread67f8.jpg net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep
