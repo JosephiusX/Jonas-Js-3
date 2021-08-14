@@ -124,3 +124,7 @@ in views touch searchView.js
             in views dir touch resultsView.js View.js
 
         *******i was getting an error because i added extends to resultsView without addidng View after it ( need to brush up on my classes )
+
+## 292. Implementing Pagination - Part 1
+
+            the easy part
