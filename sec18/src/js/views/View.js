@@ -10,7 +10,7 @@ export default class View {
 
     this._data = data;
     const markup = this._generateMarkup();
-    this._clear();
+    this._clear(); // clears the parent method
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 

@@ -142,3 +142,9 @@ in views touch searchView.js
                     should have been this:
                             this._clear();
                                 in View.js
+
+            ????? undefined shows up where a pagination button should be when there is only one page.
+
+            he reccomends analizing the code at this point before moving on
+
+
