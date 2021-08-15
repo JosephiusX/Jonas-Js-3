@@ -154,3 +154,5 @@ in views touch searchView.js
 ## 296. Developing a DOM Updating Algorithm
 
 we need to develope an alogrythem that only renders the dom in places that have changed
+
+## 297. Implementing Bookmarks - Part 1
