@@ -175,3 +175,9 @@ we want the recipe to show up in the bookmarked panel
                     -thus the data undefined message I was getting
 
 ## 299. Storing Bookmarks With localStorage
+
+## 300. Project Planning III
+
+## 301. Uploading a New Recipe - Part 1
+
+            touch addRecipeView.js
