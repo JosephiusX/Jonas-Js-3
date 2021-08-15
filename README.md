@@ -181,3 +181,5 @@ we want the recipe to show up in the bookmarked panel
 ## 301. Uploading a New Recipe - Part 1
 
             touch addRecipeView.js
+
+## 302. Uploading a New Recipe - Part 2

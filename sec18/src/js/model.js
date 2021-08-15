@@ -111,7 +111,15 @@ const init = function () {
   if (storage) state.bookmarks = JSON.parse(storage);
 };
 init();
+
 const clearBookmarks = function () {
   localStorage.clear('bookmarks');
 };
 // clearBookmarks();
+
+export const uploadRecipe = async function (newRecipe) {
+  const ingredients = Object.entries(newRecipe).filter(
+    entry => entry[0].startsWith('ingredient') && entry[1] !== ''
+  );
+  console.log(ingredients);
+};
