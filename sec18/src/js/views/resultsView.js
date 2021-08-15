@@ -10,7 +10,6 @@ class ResultsView extends View {
     console.log(this._data);
     return this._data.map(this._generateMarkupPreview).join('');
   }
-  s;
 
   _generateMarkupPreview(result) {
     return `
