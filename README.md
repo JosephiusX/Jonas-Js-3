@@ -162,3 +162,14 @@ we need to develope an alogrythem that only renders the dom in places that have 
 we want the recipe to show up in the bookmarked panel
 
             in views touch bookmarksView.js
+
+            in views touch previewView.js
+
+            recap at 14:01
+
+            ?????? looks like data is undefined in previewView.js
+            ****  in the previewView template I had :
+                data
+            instead of :
+                _data
+                    -thus the data undefined message I was getting
