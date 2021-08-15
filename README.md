@@ -150,3 +150,7 @@ in views touch searchView.js
 ## 294. Project Planning II
 
 ## 295. Updating Recipe Servings
+
+## 296. Developing a DOM Updating Algorithm
+
+we need to develope an alogrythem that only renders the dom in places that have changed
