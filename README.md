@@ -173,3 +173,5 @@ we want the recipe to show up in the bookmarked panel
             instead of :
                 _data
                     -thus the data undefined message I was getting
+
+## 299. Storing Bookmarks With localStorage
