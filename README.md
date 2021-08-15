@@ -156,3 +156,9 @@ in views touch searchView.js
 we need to develope an alogrythem that only renders the dom in places that have changed
 
 ## 297. Implementing Bookmarks - Part 1
+
+## 298. Implementing Bookmarks - Part 2
+
+we want the recipe to show up in the bookmarked panel
+
+            in views touch bookmarksView.js
