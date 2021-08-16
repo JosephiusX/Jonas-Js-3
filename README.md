@@ -183,3 +183,5 @@ we want the recipe to show up in the bookmarked panel
             touch addRecipeView.js
 
 ## 302. Uploading a New Recipe - Part 2
+
+            ????????? error renders to screen but it only says undefined instead of error message.
