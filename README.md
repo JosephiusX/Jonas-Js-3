@@ -185,3 +185,7 @@ we want the recipe to show up in the bookmarked panel
 ## 302. Uploading a New Recipe - Part 2
 
             ????????? error renders to screen but it only says undefined instead of error message.
+
+
+            ??? 26:52 getting slightly different errors
+
