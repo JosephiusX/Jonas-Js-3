@@ -4,7 +4,6 @@ export default class View {
   _data;
 
   render(data, render = true) {
-    // if there is no data or if data array is empty  ,  exit function and render error
     if (!data || (Array.isArray(data) && data.length === 0))
       return this.renderError();
 
@@ -77,7 +76,7 @@ export default class View {
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
-  rendeMessage(message = this._message) {
+  renderMessage(message = this._message) {
     const markup = `
     <div class="message">
       <div>

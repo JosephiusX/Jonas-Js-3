@@ -201,3 +201,14 @@ we want the recipe to show up in the bookmarked panel
             ??????? update servings is all messed up
 
             ??????? finished lesson but still getting the same error as in lesson 302 when I upload a new recipe( recipe loads but i get error message and cant load any more recipes)
+
+                checked - course materials
+                    controller.js
+                    addRecipeView.js
+                    model.js
+                    recipeView.js
+            ****** View.js  - renderMessage was mispelled
+
+            ??? can only upload one recipe
+
+# 304. Wrapping up: Final Considerations
