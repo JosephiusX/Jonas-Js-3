@@ -190,3 +190,7 @@ we want the recipe to show up in the bookmarked panel
             ??? 26:52 getting slightly different errors
 
             ???? recipe does save but i get an error
+                - switched to problem branch and comitted changes there,
+                - continue on prolem and see if I can find solution
+
+## 303 Uploading a New Recipe - Part 3
