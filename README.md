@@ -197,3 +197,7 @@ we want the recipe to show up in the bookmarked panel
             ******* i cant spell object
 
 ## 303 Uploading a New Recipe - Part 3
+
+            ??????? update servings is all messed up
+
+            ??????? finished lesson but still getting the same error as in lesson 302 when I upload a new recipe( recipe loads but i get error message and cant load any more recipes)
