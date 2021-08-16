@@ -200,7 +200,7 @@ we want the recipe to show up in the bookmarked panel
 
             ??????? update servings is all messed up
 
-            ??????? finished lesson but still getting the same error as in lesson 302 when I upload a new recipe( recipe loads but i get error message and cant load any more recipes)
+??????? finished lesson but still getting the same error as in lesson 302 when I upload a new recipe( recipe loads but i get error message and cant load any more recipes)
 
                 checked - course materials
                     controller.js
@@ -209,6 +209,26 @@ we want the recipe to show up in the bookmarked panel
                     recipeView.js
             ****** View.js  - renderMessage was mispelled
 
+            ??????? update servings are all messed up
             ??? can only upload one recipe
+
+                checked - course materials
+                        addRecipeView.js
+                        bookmarksView.js
+                        paginationView.js
+                        previewView.js
+                        recipeView.js
+                        resultsView.js
+                        searchView.js
+                        Views.js
+                    config.js
+                    controller.js
+                    helpers.js
+                    model.js
+
+                    index.js
+
+            ????? search results pictures not showing up
+            may have been a thing already
 
 # 304. Wrapping up: Final Considerations
