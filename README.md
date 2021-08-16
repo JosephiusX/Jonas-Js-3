@@ -193,4 +193,7 @@ we want the recipe to show up in the bookmarked panel
                 - switched to problem branch and comitted changes there,
                 - continue on prolem and see if I can find solution
 
+            ?????? createRecipeObjet not defined
+            ******* i cant spell object
+
 ## 303 Uploading a New Recipe - Part 3

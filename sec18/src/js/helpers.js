@@ -22,15 +22,17 @@ export const getJSON = async function (url) {
   }
 };
 
-export const sendJSON = async function (url, uploadData) {
+export const AJAX = async function (url, uploadData = undefined) {
   try {
-    const fetchPro = fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(uploadData),
-    });
+    const fetchPro = uploadData
+      ? fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(uploadData),
+        })
+      : fetch(url);
 
     const res = await Promise.race([fetchPro, timeout(TIMEOUT_SEC)]); // fetch creates a promise so it must be awaited
     const data = await res.json();
@@ -41,3 +43,16 @@ export const sendJSON = async function (url, uploadData) {
     throw err;
   }
 };
+
+// export const sendJSON = async function (url, uploadData) {
+//   try {
+//     const fetchPro = fetch(url);
+//     const res = await Promise.race([fetchPro, timeout(TIMEOUT_SEC)]); // fetch creates a promise so it must be awaited
+//     const data = await res.json();
+
+//     if (!res.ok) throw new Error(`${data.message} (${res.status}`); // if the response has ok set to false its an error, so we log the response message and status code
+//     return data;
+//   } catch (err) {
+//     throw err;
+//   }
+// };
