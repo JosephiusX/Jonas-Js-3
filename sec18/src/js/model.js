@@ -25,7 +25,7 @@ const createRecipeObject = function (data) {
     servings: recipe.servings,
     cookingTime: recipe.cooking_time,
     ingredients: recipe.ingredients,
-    ...(recipe.key && { key: recipe.key }), // conditionally add properties to a object
+    ...(recipe.key && { key: recipe.key }),
   };
 };
 
@@ -41,11 +41,11 @@ export const loadRecipe = async function (id) {
     console.log(state.recipe);
   } catch (err) {
     // Temp error handling
-    console.error(`${err} 💥💥💥💥💥`);
+    console.error(`${err} 💥💥💥💥`);
     throw err;
   }
 };
-// https://forkify-api.herokuapp.com/api/v2/recipes?search=pizza
+
 export const loadSearchResults = async function (query) {
   try {
     state.search.query = query;
@@ -54,7 +54,6 @@ export const loadSearchResults = async function (query) {
     console.log(data);
 
     state.search.results = data.data.recipes.map(rec => {
-      // console.log(state.search.results);
       return {
         id: rec.id,
         title: rec.title,
@@ -65,15 +64,16 @@ export const loadSearchResults = async function (query) {
     });
     state.search.page = 1;
   } catch (err) {
-    console.error(`${err} 💥💥💥💥💥`);
+    console.error(`${err} 💥💥💥💥`);
     throw err;
   }
 };
 
 export const getSearchResultsPage = function (page = state.search.page) {
   state.search.page = page;
+
   const start = (page - 1) * state.search.resultsPerPage; // 0
-  const end = page * state.search.resultsPerPage; //  9
+  const end = page * state.search.resultsPerPage; // 9
 
   return state.search.results.slice(start, end);
 };
@@ -81,13 +81,13 @@ export const getSearchResultsPage = function (page = state.search.page) {
 export const updateServings = function (newServings) {
   state.recipe.ingredients.forEach(ing => {
     ing.quantity = (ing.quantity * newServings) / state.recipe.servings;
-    // newQt = oldQt * newServings / oldServings // 2  * 8 / 4 = 4
+    // newQt = oldQt * newServings / oldServings // 2 * 8 / 4 = 4
   });
 
   state.recipe.servings = newServings;
 };
 
-const persistBookmarks = function (recipe) {
+const persistBookmarks = function () {
   localStorage.setItem('bookmarks', JSON.stringify(state.bookmarks));
 };
 
@@ -128,11 +128,11 @@ export const uploadRecipe = async function (newRecipe) {
     const ingredients = Object.entries(newRecipe)
       .filter(entry => entry[0].startsWith('ingredient') && entry[1] !== '')
       .map(ing => {
-        // const ingArr = ing[1].replaceAll(' ', '').split(',');
         const ingArr = ing[1].split(',').map(el => el.trim());
+        // const ingArr = ing[1].replaceAll(' ', '').split(',');
         if (ingArr.length !== 3)
           throw new Error(
-            'Wrong ingredient format! Please use the correct format :)'
+            'Wrong ingredient fromat! Please use the correct format :)'
           );
 
         const [quantity, unit, description] = ingArr;

@@ -55,20 +55,23 @@ class PaginationView extends View {
           curPage - 1
         }" class="btn--inline pagination__btn--prev">
           <svg class="search__icon">
-              <use href="${icons}#icon-arrow-left"></use>
+            <use href="${icons}#icon-arrow-left"></use>
           </svg>
           <span>Page ${curPage - 1}</span>
         </button>
         <button data-goto="${
           curPage + 1
         }" class="btn--inline pagination__btn--next">
-        <span>Page ${curPage + 1}</span>
-        <svg class="search__icon">
+          <span>Page ${curPage + 1}</span>
+          <svg class="search__icon">
             <use href="${icons}#icon-arrow-right"></use>
-        </svg>
-     </button>
+          </svg>
+        </button>
       `;
     }
+
+    // Page 1, and there are NO other pages
+    return '';
   }
 }
 
